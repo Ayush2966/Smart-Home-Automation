@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: const MyHomePage(title: 'Smart Home Automation '),
+      home: const MyHomePage(title: 'Light Control System'),
     );
   }
 }
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   bool _toggleValue3 = false;
   bool _toggleValue4 = false;
   bool _isDarkMode = false;
-  double _fanSpeed = 0.0; // Initially set to 0 RPM
+  double _fanSpeed = 0; // Initially set to 0 RPM
   final topic = 'nishant/again';
 
   late MqttServerClient client;
